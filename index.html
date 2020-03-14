@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<!--
+版权说明
+本页面归原作者 Fly 所有，拒绝一切未经授权的使用。
+使用授权申请，可通过邮箱联系Fly。
+拒绝授权转让。
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.2/css/mdui.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/minireset.css/minireset.min.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+    <link rel="icon" href="head.jpg">
+    <title>Bluecityの小窝</title>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js" integrity="sha256-9uAoNWHdszsUDhSXf/rVcWOqKPfi5/8V5R4UdbZle2A=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js" integrity="sha256-nwhzW/P9gnvWMPOm84MK8BzQRRMdi8iutxMuYsYcOgw=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="background-small"></div>
+    <!-- Loading hover -->
+    <div class="loading">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+
+    <!-- Main box -->
+    <main>
+        <div class="content mdui-hoverable">
+            <div class="left">
+                <div class="avatar">
+                    <img src="/head.jpg">
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a goto="#home">HOME</a>
+                    </li>
+                    <li>
+                        <a goto="#contact">CONTACT</a>
+                    </li>
+                    <li>
+                        <a goto="#donate">DONATE</a>
+                    </li>
+                    <li>
+                        <a goto="#commS" onclick="comm();">COMMENT</a>
+                    </li>
+                    <li>
+                        <a goto="#musicS" onclick="music();">MUSIC</a>
+                    </li> 
+                  <li>
+                        <a goto="#home" href="/aria.html" target="_blank">DOWNLOAD</a>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    Made with
+                    <i class="fa fa-heart"></i> by
+                    <br>
+                    <a href="https://fly.moe" target="_blank">Fly3949</a>
+                </div>
+            </div>
+            <div class="right">
+                <section id="home" class="active">
+                    <h1>BlueCity</h1>
+                    <p>
+                        我,Bluecity,
+                        <br>菜炸了.
+                        <br> 没啥写的.
+                        <br>就这样.
+                    </p>
+                </section>
+      
+                <section id="contact">
+                    <h1>捕捉方式</h1>
+                    <div class="items">
+                        <a href="https://github.com/BluecityS" target="_blank">
+                            <i class="fa fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="mailto:xiaoyangjunstudio@outlook.com" target="_blank">
+                            <i class="fa fa-envelope"></i>
+                            <span>E-Mail</span>
+                        </a>
+                      <a oncilck="alert('QQ:3289640025')">
+                            <i class="fa fa-qq"></i>
+                            <span>QQ</span>
+                        </a>
+                    </div>
+                </section>
+                <section id="donate">
+                    <h1>拯救吃土的 bluecity</h1>
+                    <div class="donate-img-box">
+                        <img src="/img.jpg">
+                   
+                    </div>
+<!--                     <p>
+                         FLY3949的bitcoin 
+                        Bitcoin: 32VRHdCR1nSsKG5aXi4MZBrvTwH8dvHFm4
+                        <br>PayPal:
+                        <a href="https://paypal.me/lwl12" target="_blank">https://paypal.me/lwl12</a>
+                    </p> -->
+                </section>
+              <!-- 评论框架-->
+              <section id="commS">
+                <iframe src="" id="comm" width="500" height="400"></iframe>
+                </section>
+                <section id="musicS">
+                    <iframe src="" id="music" width="500" height="400"></iframe>
+                </section>
+            </div>
+        </div>
+
+        <footer>
+            <p id="hitokoto">Loading...</p>
+            <div class="copyright-mobile">
+                Made with
+                <i class="fa fa-heart"></i> by
+                <a href="https://fly.moe" target="_blank">Fly3949</a><br>建议在宽度在768px以上的设备上查看
+            </div>
+
+        </footer>
+    </main>
+
+    <!-- Some scripts -->
+    <script src="//cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script src="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.2/js/mdui.min.js"></script>
+    <script src="/main.js"></script>
+</body>
+
+</html>
